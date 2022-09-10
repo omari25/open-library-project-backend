@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
             title: params[:title],
             thumbnail: params[:thumbnail],
             pagecount: params[:pagecount],
-            author_id: params[:author_id],
+            author_id: params[:author_id], 
         )
         book1.to_json
     end
