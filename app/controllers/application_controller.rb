@@ -28,4 +28,10 @@ class ApplicationController < Sinatra::Base
         deleted.to_json
     end
 
+    delete '/books/:id' do
+        deleted = Book.find(params[:id])
+        deleted.destroy
+        deleted.to_json
+    end
+
 end
